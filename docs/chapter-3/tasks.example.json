@@ -1,0 +1,89 @@
+{
+    "$schema": "./collection+json.schema.json",
+    "collection": {
+        "href": "<Domene + path til roten av server for collection+json>",
+        "version": "1.0",
+        "items": [
+            {
+                "href": "<Opp til server å bestemme>",
+                "data": [
+                    {
+                        "name": "description",
+                        "value": "This is my first task",
+                        "prompt": "Description"
+                    },
+                    {
+                        "name": "completed",
+                        "value": "true",
+                        "prompt": "Completed"
+                    },
+                    {
+                        "name": "dateCreated",
+                        "value": "2022-01-25",
+                        "prompt": "Date created"
+                    },
+                    {
+                        "name": "dateDue",
+                        "value": "2022-01-26",
+                        "prompt": "Date Due"
+                    }
+                ]
+            }
+        ],
+        "queries": [
+            {
+                "href": "<opp til server>",
+                "rel": "all",
+                "prompt": "All tasks"
+            },
+            {
+                "href": "<opp til server>",
+                "rel": "open",
+                "prompt": "Open tasks"
+            },
+            {
+                "href": "<opp til server>",
+                "rel": "closed",
+                "prompt": "Closed tasks"
+            },
+            {
+                "href": "<opp til server>",
+                "rel": "date-due",
+                "prompt": "Date due",
+                "data": [
+                    {
+                        "name": "dateStart",
+                        "value": "",
+                        "prompt": "Start Date"
+                    },
+                    {
+                        "name": "dateStop",
+                        "value": "",
+                        "prompts": "Stop Date"
+                    }
+                ]
+            }
+        ],
+        "links": [],
+        "template": {
+            "data": [
+                {
+                    "name": "description",
+                    "value": "",
+                    "prompt": "Description"
+                },
+                {
+                    "name": "completed",
+                    "value": "",
+                    "prompt": "Completed"
+                },
+                {
+                    "name": "dateDue",
+                    "value": "",
+                    "prompt": "Description"
+                }
+            ]
+        },
+        "error": {}
+    }
+}
