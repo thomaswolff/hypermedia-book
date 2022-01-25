@@ -95,24 +95,24 @@ Ettersom klientene skal skriver i JavaScript, brukes JSON som dataformat. Dette 
 ###### Tilstandsoverganger
 
 - "Collection state"
-  01. Velge enkeltinnslag ("Item state")
-  02. Legge til enkeltinnslag ("Item state")
-  03. Utføre spørring ("Collection state")
-  04. Last samlingen på nytt ("Collection state")
+  - 1 - Velge enkeltinnslag ("Item state")
+  - 2 - Legge til enkeltinnslag ("Item state")
+  - 3 - Utføre spørring ("Collection state")
+  - 4 - Last samlingen på nytt ("Collection state")
 - "Item state"
-  05. Oppdatere innslaget ("Item state")
-  06. Slette innslaget ("Collection state")
-  07. Hent innslaget på nytt ("Item state")
-  08. Gå tilbake til samlingen ("Collection state")
+  - 5 - Oppdatere innslaget ("Item state")
+  - 6 - Slette innslaget ("Collection state")
+  - 7 - Hent innslaget på nytt ("Item state")
+  - 8 - Gå tilbake til samlingen ("Collection state")
 - "Query state"
-  09. Kjøre spørring ("Collection state")
-  10. Gå tilbake til samlingen ("Collection state")
-  11. Hent spørringene på nytt ("Query state")
+  - 9 - Kjøre spørring ("Collection state")
+  - 10 - Gå tilbake til samlingen ("Collection state")
+  - 11 - Hent spørringene på nytt ("Query state")
 - "Template state"
-  12. Legge til enkeltinnslag ("Item state")
-  13. Oppdatere enkeltinnslag ("Item state")
-  14. Gå tilbake til samlingen ("Collection state")
-  15. Last malen på nytt ("Template state")
+  - 12 - Legge til enkeltinnslag ("Item state")
+  - 13 - Oppdatere enkeltinnslag ("Item state")
+  - 14 - Gå tilbake til samlingen ("Collection state")
+  - 15 - Last malen på nytt ("Template state")
 
 ![Skisse](gfx/chapter-3/state-transitions.drawio.svg)
 
@@ -122,7 +122,7 @@ Hvilke mønstre kan vi velge mellom?
 
 - "Read only" - klienter trenger ikke å overføre data til server, kun hente data. Eksempel: `SVG11`.
 - "Predefined" - har behov for tilstandsoverganger initiert av klient. Tilstandsovergangene er spesifisert og dokumentert. Eksempel: `AtomPub`.
-- "Ad-hoc" - tilstandsovergangene ligger i hypemediameldingen i seg selv. Eksempel: `HTML` (`form`,           `input`).
+- "Ad-hoc" - tilstandsovergangene ligger i hypemediameldingen i seg selv. Eksempel: `HTML` (`form`,            `input`).
 
 Velger predefinert ettersom det er et begrenset antall med tilstandsoverganger. Enkelt å finne HTTP metode som passer med handlingene man ønsker å gjøre:
 
