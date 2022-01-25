@@ -66,15 +66,53 @@ Open [http://localhost:8080](http://localhost:8080) to view `Collection+JSON` cl
 
 #### Use case
 
-Lage et hypermediaformat for å støtte lese- og skriveoperasjoner for samlinger av "ting".
+Lage en hypermediatype for å støtte lese- og skriveoperasjoner for samlinger av "ting" (f.eks. oppgaveliste).
 
-#### Design av hypermediaformatet
+#### Design av hypermediatypen
 
-##### Grunnformat
+Betraktninger av de ulike dimensjonene av en hypermediatype som gjøres fra klientenes perspektiv.
 
-JSON
+##### Dataformat
 
-Blir valgt fordi det er enkelt å behandle i JavaScript.
+Ettersom klientene skal skriver i JavaScript, brukes JSON som dataformat. Dette gjør det enkelt å behandle dataene i JavaScript.
+
+##### Tilstandsoverganger ("state transitions")
+
+###### Hva skal tilstandene inneholde?
+
+- Samlingen av "ting"
+- Et enkelt innslag i samlingen
+- Liste med mulige spørringer man kan gjøre mot samlingen
+- Mal for å legge til eller redigere innslag i samlingen
+- Feildetaljer
+
+###### Aktuelle tilstander
+
+- "Collection state"
+  - Samlingen av "ting"
+  - Spørringer
+  - Mal for å opprette innslag
+- "Item state"
+  - Et enkelt innslag
+  - Spørringer
+  - Mal for å redigere innslaget
+- "Error state"
+  - Detaljer om den nyeste feilen som oppstod
+
+###### Tilstandsoverganger
+
+- "Collection state"
+  1. -> Velge enkeltinnslag ("Item state")
+  2. -> Legge til enkeltinnslag ("Item state")
+  3. -> Utføre spørring ("Collection state")
+  4. -> Last samlingen på nytt ("Collection state")
+- "Item state"
+  5. -> Oppdatere innslaget ("Item state")
+  6. -> Slette innslaget ("Collection state")
+  7. -> Hent innslaget på nytt ("Item state")
+  8. -> Gå tilbake til samlingen ("Collection state")
+
+![Skisse](gfx/chapter-3/state-transitions.drawio.svg)
 
 ##### Husker ikke begrepet
 
