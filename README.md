@@ -150,7 +150,7 @@ _Vis `collection+json.schema.json` og `tasks.example.json`_
 
 #### Server
 
-`Node` -applikasjon laget med:
+`Node`-applikasjon laget med:
 
 - `Express.js`
 - `ejs` (_Embedded JavaScript templates)
@@ -159,6 +159,10 @@ _Vis `collection+json.schema.json` og `tasks.example.json`_
 #### HTML-klient
 
 JavaScript-applikasjon som har innebygd forståelse av `Collection+JSON` -hypermedia-formatet. Forøvrig er den eneste koblingen mellom klient og server at klienten har en forhåndsbestemt URL for å nå serveren.
+
+#### CLI-klient
+
+`Node`-applikasjon som leser mal fra server, og oppretter nye oppgaver vha. HTTP POST.
 
 #### Demo
 
