@@ -56,3 +56,41 @@ http-server
 ```
 
 Open [http://localhost:8080](http://localhost:8080) to view `Collection+JSON` client.
+
+### Presentation notes
+
+#### Use case
+
+Lage et hypermediaformat for å støtte lese- og skriveoperasjoner for samlinger av "ting".
+
+#### Design av hypermediaformatet
+
+##### Grunnformat
+
+JSON
+
+Blir valgt fordi det er enkelt å behandle i JavaScript.
+
+##### Husker ikke begrepet
+
+Generic - `Collection+JSON` er ikke spesifikt for én spesiell "ting", men kan brukes til å modellere alle "ting".
+
+##### Application flow
+
+Intrinsic - hva innebærer det?
+
+##### Format på respons
+
+JSON Schema
+
+#### Server
+
+`Node`-applikasjon laget med:
+
+- `Express.js`
+- `ejs` (_Embedded JavaScript templates)
+- `CouchDb`
+
+#### Klient
+
+JavaScript-applikasjon som har innebygd forståelse av `Collection+JSON`-hypermedia-formatet. Forøvrig er den eneste koblingen mellom klient og server at klienten har en forhåndsbestemt URL for å nå serveren.
