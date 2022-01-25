@@ -4,6 +4,9 @@ Personal notes from reading [https://github.com/mamund/Building-Hypermedia-APIs]
 
 ## Chapter 3 - JSON hypermedia
 
+<details>
+<summary>Installation notes</summary>
+
 ### Installation notes
 
 #### Prerequisites
@@ -56,6 +59,8 @@ http-server
 ```
 
 Open [http://localhost:8080](http://localhost:8080) to view `Collection+JSON` client.
+
+</details>
 
 ### Presentation notes
 
