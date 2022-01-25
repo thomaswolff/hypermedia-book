@@ -146,7 +146,7 @@ I vårt tilfelle kan applikasjonsflyten bygges direkte inn i hypemediatypen: hvi
 
 ##### Format på respons
 
-_Vis `collection+json.schema.json` og `tasks.example.json` _
+_Vis `collection+json.schema.json` og `tasks.example.json`_
 
 #### Server
 
