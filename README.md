@@ -6,6 +6,12 @@ Personal notes from reading [https://github.com/mamund/Building-Hypermedia-APIs]
 
 ### Installation notes
 
+#### Prerequisites
+
+- Docker
+- Node
+- WSL
+
 #### CouchDB in WSL
 
 ```bash
