@@ -55,7 +55,7 @@ Open [http://localhost:3000](http://localhost:3000) to view `Collection+JSON` cl
 
 </details>
 
-### Presentation notes
+### Presentasjon
 
 #### Use case
 
@@ -67,7 +67,7 @@ Betraktninger av de ulike dimensjonene av en hypermediatype som gjøres fra klie
 
 ##### Dataformat
 
-Ettersom klientene skal skriver i JavaScript, brukes JSON som dataformat. Dette gjør det enkelt å behandle dataene i JavaScript.
+Ettersom klientene skal skrives i JavaScript, brukes JSON som dataformat. Dette gjør det enkelt å behandle dataene i JavaScript.
 
 ##### Tilstandsoverganger ("state transitions")
 
