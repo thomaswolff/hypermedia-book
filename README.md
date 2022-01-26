@@ -178,7 +178,7 @@ JavaScript-applikasjon som har innebygd forståelse av `Collection+JSON` -hyperm
 
 ##### Demo av HTML-klient
 
-- [http://localhost:8080/](http://localhost:8080/)
+- [http://localhost:3000/](http://localhost:3000/)
 
 ##### ThunderClient
 
