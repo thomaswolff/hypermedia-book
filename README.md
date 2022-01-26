@@ -242,7 +242,7 @@ HTTP POST til `http://localhost:3000/collection/tasks/` med body (av en eller an
 }
 ```
 
-HTTP PUT til `http://localhost:3000/collection/tasks/` med body:
+HTTP PUT til `http://localhost:3000/collection/tasks/task1` med `if-match=<revision fra basen>` og body:
 
 ```json
 {
