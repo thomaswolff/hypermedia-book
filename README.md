@@ -82,15 +82,17 @@ Ettersom klientene skal skriver i JavaScript, brukes JSON som dataformat. Dette 
 ###### Aktuelle tilstander
 
 - "Collection state"
-  - Samlingen av "ting"
-  - Spørringer
-  - Mal for å opprette innslag
+  - Inneholder
+    - Samlingen av "ting"
+    - Spørringer
+    - Mal for å opprette innslag
 - "Item state"
-  - Et enkelt innslag
-  - Spørringer
-  - Mal for å redigere innslaget
+  - Inneholder
+    - Et enkelt innslag
+    - Spørringer
+    - Mal for å redigere innslaget
 - "Error state"
-  - Detaljer om den nyeste feilen som oppstod
+  - Inneholdet detaljer om den nyeste feilen som oppstod
 
 ###### Tilstandsoverganger
 
