@@ -114,7 +114,7 @@ Ettersom klientene skal skriver i JavaScript, brukes JSON som dataformat. Dette 
   - 14 - Gå tilbake til samlingen ("Collection state")
   - 15 - Last malen på nytt ("Template state")
 
-![Skisse](gfx/chapter-3/state-transitions.drawio.svg)
+![Tilstandsoverganger](gfx/chapter-3/state-transitions.drawio.svg)
 
 ###### Hva slags type tilstandsovergang skal vi ha?
 
@@ -160,11 +160,19 @@ _Vis `collection+json.schema.json` og `tasks.example.json`_
 
 JavaScript-applikasjon som har innebygd forståelse av `Collection+JSON` -hypermedia-formatet. Forøvrig er den eneste koblingen mellom klient og server at klienten har en forhåndsbestemt URL for å nå serveren.
 
+##### Sekvensdiagram
+
+![Sekvensdiagram](gfx/chapter-3/html-client-sequence-diagram.drawio.svg)
+
 #### CLI-klient
 
 `Node`-applikasjon som leser mal fra server, og oppretter nye oppgaver vha. HTTP POST.
 
 #### Demo
+
+##### Dokumentasjon
+
+- [http://localhost:3000/docs](http://localhost:3000/docs)
 
 ##### Demo av HTML-klient
 
