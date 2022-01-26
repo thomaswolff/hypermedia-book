@@ -152,12 +152,14 @@ _Vis `collection+json.schema.json` og `tasks.example.json`_
 
 #### Implementasjon
 
+![Arkitektur](gfx/chapter-3/architecture.drawio.svg)
+
 ##### Server
 
 `Node`-applikasjon laget med:
 
 - `Express.js`
-- `ejs` (_Embedded JavaScript templates)
+- `ejs` ("Embedded JavaScript templates")
 - `CouchDb`
 
 ##### HTML-klient
