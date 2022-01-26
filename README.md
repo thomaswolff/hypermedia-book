@@ -249,3 +249,10 @@ HTTP PUT til `http://localhost:3000/collection/tasks/` med body:
 HTTP DELETE til `http://localhost:3000/collection/tasks/task1` med `if-match=<revision fra basen>`
 
 ##### Demo av CLI-klient
+
+```bash
+# Kjør i Windows PowerShell
+cd C:\Dev\github.com\Building-Hypermedia-APIs\nodejs\collection\cmd-line-app
+node add-task.js "My task" "2022-03-12"
+*** task added!
+```
