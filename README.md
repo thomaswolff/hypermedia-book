@@ -162,9 +162,9 @@ _Vis `collection+json.schema.json` og `tasks.example.json`_
 - `ejs` ("Embedded JavaScript templates")
 - `CouchDb`
 
-##### HTML-klient
+##### Web-klient
 
-JavaScript-applikasjon som har innebygd forståelse av `Collection+JSON` -hypermedia-formatet. Forøvrig er den eneste koblingen mellom klient og server at klienten har en forhåndsbestemt URL for å nå serveren.
+JavaScript-applikasjon som har innebygd forståelse av `Collection+JSON`-hypermedia-formatet anvendt på "Tasks". Forøvrig er den eneste koblingen mellom klient og server at klienten har en forhåndsbestemt URL for å nå serveren `http://localhost:3000`.
 
 ###### Sekvensdiagram
 
@@ -247,3 +247,5 @@ HTTP PUT til `http://localhost:3000/collection/tasks/` med body:
 ```
 
 HTTP DELETE til `http://localhost:3000/collection/tasks/task1` med `if-match=<revision fra basen>`
+
+##### Demo av CLI-klient
