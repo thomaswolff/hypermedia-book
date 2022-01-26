@@ -14,6 +14,18 @@ Personal notes from reading [https://github.com/mamund/Building-Hypermedia-APIs]
 - Docker
 - Node
 - WSL
+- Clone [https://github.com/mamund/Building-Hypermedia-APIs](https://github.com/mamund/Building-Hypermedia-APIs)
+
+##### Changes to the code
+
+- Server
+  - Setup `express.js` to serve static files
+  - Remove leading `/` in CouchDb view names
+- Web client
+  - Path to `.css` and `.js`
+  - Added link to documentation
+- CLI client
+  - Rewrite use of `http`
 
 #### CouchDB in WSL
 
@@ -56,6 +68,13 @@ Open [http://localhost:3000](http://localhost:3000) to view `Collection+JSON` cl
 </details>
 
 ### Presentasjon
+
+#### Agenda
+
+- Presentere use case
+- Gå gjennom designvalg
+- Se på implementasjon av server, web-klient og CLI-klient
+- (Hva måtte til for å få koden til å kjøre lokalt?)
 
 #### Use case
 
