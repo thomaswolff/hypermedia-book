@@ -150,7 +150,9 @@ I vårt tilfelle kan applikasjonsflyten bygges direkte inn i hypemediatypen: hvi
 
 _Vis `collection+json.schema.json` og `tasks.example.json`_
 
-#### Server
+#### Implementasjon
+
+##### Server
 
 `Node`-applikasjon laget med:
 
@@ -158,15 +160,15 @@ _Vis `collection+json.schema.json` og `tasks.example.json`_
 - `ejs` (_Embedded JavaScript templates)
 - `CouchDb`
 
-#### HTML-klient
+##### HTML-klient
 
 JavaScript-applikasjon som har innebygd forståelse av `Collection+JSON` -hypermedia-formatet. Forøvrig er den eneste koblingen mellom klient og server at klienten har en forhåndsbestemt URL for å nå serveren.
 
-##### Sekvensdiagram
+###### Sekvensdiagram
 
 ![Sekvensdiagram](gfx/chapter-3/html-client-sequence-diagram.drawio.svg)
 
-#### CLI-klient
+##### CLI-klient
 
 `Node`-applikasjon som leser mal fra server, og oppretter nye oppgaver vha. HTTP POST.
 
