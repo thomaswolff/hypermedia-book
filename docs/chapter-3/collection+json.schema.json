@@ -10,13 +10,13 @@
                 },
                 "href": {
                     "type": "string",
-                    "format": "uri"
+                    "format": "uri",
+                    "description": "URI of the collection"
                 },
                 "links": {
                     "type": "array",
                     "items": {
-                        "type": "object",
-                        "properties": {}
+                        "$ref": "#/components/schemas/link-item"
                     }
                 },
                 "items": {
@@ -26,7 +26,8 @@
                         "properties": {
                             "href": {
                                 "type": "string",
-                                "format": "uri"
+                                "format": "uri",
+                                "description": "URI for retrieving (HTTP GET), editing (HTTP PUT) or deleting (HTTP DELETE) this item"
                             },
                             "data": {
                                 "type": "array",
@@ -37,29 +38,7 @@
                             "links": {
                                 "type": "array",
                                 "items": {
-                                    "type": "object",
-                                    "properties": {
-                                        "href": {
-                                            "type": "string",
-                                            "format": "uri"
-                                        },
-                                        "rel": {
-                                            "type": "string"
-                                        },
-                                        "name": {
-                                            "type": "string"
-                                        },
-                                        "render": {
-                                            "type": "string"
-                                        },
-                                        "prompt": {
-                                            "type": "string"
-                                        }
-                                    },
-                                    "required": [
-                                        "href",
-                                        "rel"
-                                    ]
+                                    "$ref": "#/components/schemas/link-item"
                                 }
                             }
                         }
@@ -87,7 +66,18 @@
                                 "type": "array",
                                 "items": {
                                     "type": "object",
-                                    "properties": {}
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "name",
+                                        "value"
+                                    ]
                                 }
                             }
                         },
@@ -99,6 +89,7 @@
                 },
                 "template": {
                     "type": "object",
+                    "description": "Template for adding or updating items",
                     "properties": {
                         "data": {
                             "type": "array",
@@ -146,6 +137,31 @@
                 },
                 "required": [
                     "name"
+                ]
+            },
+            "link-item": {
+                "type": "object",
+                "properties": {
+                    "href": {
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    "rel": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "render": {
+                        "type": "string"
+                    },
+                    "prompt": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "href",
+                    "rel"
                 ]
             }
         }
